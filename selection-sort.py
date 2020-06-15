@@ -5,8 +5,9 @@ def selectionSort(arr):
     # through a list of elements, finding the smallest one, and swapping it 
     # for the place of unsorted item (at the front of the sorted section).
     
-    # O(n²) Time Complexity (Nested For loops)
-    for i, ithElement in enumerate(arr):
+    # O(n²) Time Complexity (Nested For loops), 
+    # O(1) Space complexity (in-place), (no extra space required)
+    for i, _ in enumerate(arr):
         # Initialy, keep the value of i to be the smallest value's index
         smallestIndex = i
         # Iterate the remaining list (from i+1 to the end)

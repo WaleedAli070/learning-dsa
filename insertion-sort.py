@@ -6,7 +6,7 @@ def insertionSort(arr):
     # inserting each element, one by one, at its correct order in the sorted-list.
     
     # O(n²) Worst case Time Complexity (Nested For loops), O(n) Best case Time Complexity
-    # O(n) Space Complexity, (in-place).
+    # O(1) Space Complexity, (in-place). (no extra space required)
     
     # Iterate to the length of the list
     # We will have two sub-lists, sorted and unsorted
@@ -30,5 +30,4 @@ def insertionSort(arr):
         print('After ' + str(i+1) + ' Iteration(s):')
         print(arr)
     return arr
-
 insertionSort([4, 3, 1, 5, -2, 6, -3, 1, 0, 2, 10, 12, 6, 7])

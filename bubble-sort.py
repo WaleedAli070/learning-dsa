@@ -7,10 +7,10 @@ def bubbleSort(arr):
     # It continues to swap out of order elements until the entire list is sorted.
     
     # O(n²) Time Complexity (Nested For loops), 
-    # O(1) Space complexity (no extra space required)
+    # O(1) Space complexity (in-place), (no extra space required)
     
     # Iterate to the end of the list
-    for i, ithElement in enumerate(arr):
+    for i, _ in enumerate(arr):
         # Flag to check if any swapping is done in the current iteration
         swapped = False
         # Iterating from start of the list to the length - value of i (minor optimization)
@@ -34,4 +34,4 @@ def bubbleSort(arr):
         print(arr)
     return arr
 
-bubbleSort([4, 3, 1, 5, 2, 6, 3, 1, 0, 2, 10, 12, 6, 7])
+bubbleSort([4, 3, 1, 5, -2, 6, -3, 1, 0, 2, 10, 12, 6, 7])
