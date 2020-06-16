@@ -1,4 +1,4 @@
-def quickSort(arr, left = None, right = None, count = 0):
+def quickSort(arr, left = None, right = None):
     # Quick Sorting Algorithm
     
     # The quicksort algorithm uses a Divide&Conquer strategy, that sorts a collection 
@@ -29,14 +29,14 @@ def quickSort(arr, left = None, right = None, count = 0):
         index = partition(arr, left, right)
 
         print('Boundary Index', index)
-        count += 1
+
         # until, the boundary index is less than the value of left and greater than the value of right,
         # (esentially meaning, the sub-array length is greater than 1), keep calling the function
         # recursively to perform splits of the array.
         if (left < index - 1):
-            quickSort(arr, left, index - 1, count)
+            quickSort(arr, left, index - 1)
         if (index < right):
-            quickSort(arr, index, right, count)
+            quickSort(arr, index, right)
     
     print('Array: ', arr)
     return arr
