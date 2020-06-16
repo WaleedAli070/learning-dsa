@@ -38,7 +38,6 @@ def quickSort(arr, left = None, right = None):
         if (index < right):
             quickSort(arr, index, right)
     
-    print('Array: ', arr)
     return arr
 
 def partition(arr, left, right):
